@@ -30,7 +30,7 @@ export default function Senttoken() {
 
 
     return (
-        <div className="flex flex-col items-center justify-center text-white pt-4">
+        <div className="flex flex-col items-center justify-center text-white pt-4 pb-8">
             <h1 className="text-2xl font-bold mb-2">Send Token to Wallet</h1>
 
             <form onSubmit={sentToken} className="flex flex-col gap-6 w-full max-w-md p-6 bg-gray-800 rounded-lg shadow-lg">

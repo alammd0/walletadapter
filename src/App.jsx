@@ -14,7 +14,8 @@ import { clusterApiUrl } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import Showblance from './components/Showblance';
 import Senttoken from './components/Senttoken';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Router, Routes } from 'react-router-dom';
+import { Signessage } from './components/Signmessage';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,7 @@ function App() {
                <Showblance />
                <Routes>
                   <Route path='/sent-token' element={<Senttoken />} />
+                  <Route path="/sign-message" element = {<Signessage />} />
                </Routes>
             </div>
           </WalletModalProvider>

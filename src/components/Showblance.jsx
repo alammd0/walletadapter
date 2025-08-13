@@ -36,6 +36,14 @@ export default function Showblance() {
                 </button>
             </Link>
          </div>
+
+         <div className="w-full flex items-center justify-center pt-10">
+             <Link to="/sign-message">
+                <button className="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">
+                    Sign Message
+                </button>
+           </Link>
+         </div>
         </div>
     )
 }
